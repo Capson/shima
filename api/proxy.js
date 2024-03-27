@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 module.exports = async (req, res) => {
-  const targetURL = 'https:/app.cloozo.com' + req.url;
+  const targetURL = 'https:/app.cloozo.com/*';
   try {
     const response = await fetch(targetURL);
     const body = await response.text();
